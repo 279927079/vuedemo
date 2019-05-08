@@ -1,0 +1,19 @@
+[
+   {
+       "id": "0001",
+       "url": "http://baidu.com",
+       "imgUrl": "./static/img/banner/1.jpg"
+   }, {
+       "id": "0002",
+       "url": "http://qq.com",
+       "imgUrl": "./static/img/banner/2.jpg"
+   }, {
+       "id": "0003",
+       "url": "http://baidu.com",
+       "imgUrl": "./static/img/banner/3.jpg"
+   }, {
+       "id": "0004",
+       "url": "http://weibo.com",
+       "imgUrl": "./static/img/banner/4.jpg"
+   }
+]
