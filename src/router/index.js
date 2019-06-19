@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "@/page/Home.vue";
+import Share from "@/page/Share.vue";
 import Login from "@/page/Login.vue";
 import Forget from "@/page/Forget.vue";
 import Register from "@/page/Register.vue";
@@ -45,6 +46,14 @@ const router = new Router({
       path: "/",
       name: "Home",
       component: Home,
+      meta: {
+        keepAlive: true
+      }
+    },
+    {
+      path: "/Share",
+      name: "Share",
+      component: Share,
       meta: {
         keepAlive: true
       }

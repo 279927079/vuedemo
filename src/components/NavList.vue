@@ -6,11 +6,7 @@
       <i class="home"></i>
       <span>首页</span>
     </router-link>
-    <router-link v-bind:to="'/Sceneries'" class="flex-item">
-      <i class="tickets"></i>
-      <span>门票</span>
-    </router-link>
-    <router-link v-bind:to="'/share'" class="flex-item">
+    <router-link v-bind:to="'/Share'" class="flex-item">
       <i class="my"></i>
       <span>分享</span>
     </router-link>
@@ -82,9 +78,9 @@ export default {
   background-position: 0 0;
 }
 
-.tabbar-nav .router-link-exact-active i.home {
+/* .tabbar-nav .router-link-exact-active i.home {
   background-position: 0 -0.6rem;
-}
+} */
 .tabbar-nav i.tickets {
   width: 0.45rem;
   height: 0.44rem;
@@ -113,7 +109,7 @@ export default {
   background-position: -1.8rem 0;
 }
 .tabbar-nav .router-link-exact-active i.my {
-  background-position: -1.8rem -0.6rem;
+  /* background-position: -1.8rem -0.6rem; */
 }
 .tabbar-nav span {
   display: block;
@@ -123,7 +119,7 @@ export default {
   transform: scale(0.83333333);
   text-align: center;
 }
-.tabbar-nav .router-link-exact-active span {
+/* .tabbar-nav .router-link-exact-active span {
   color: #1fba22;
-}
+} */
 </style>

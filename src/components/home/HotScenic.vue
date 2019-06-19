@@ -52,7 +52,7 @@ export default {
   margin-top: 20px;
 }
 .hot-scenic-spot .title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   height: 90px;
   line-height: 90px;

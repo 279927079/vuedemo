@@ -34,7 +34,7 @@
 					"label":["缩微景区","世界奇观"]
 				},{
 					"price": 59,
-					"name":"深圳青青世界",
+					"name":"大侠谷",
 					"url":"http://weibo.com",
 					"imgUrl":"./static/img/demo/2.jpg",
 					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
@@ -42,35 +42,7 @@
 				},
 				{
 					"price": 59,
-					"name": "深圳世界之窗",
-					"url": "http://weibo.com",
-					"imgUrl": "./static/img/demo/1.jpg",
-					"description": "你给我一天，我给你一个世界",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳青青世界",
-					"url":"http://weibo.com",
-					"imgUrl":"./static/img/demo/2.jpg",
-					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳锦绣中华民俗村",
-					"url":"http://weibo.com",
-					"imgUrl":"./static/img/demo/3.jpg",
-					"description":"一步迈进历史，一天走遍中华",
-					"label":["缩微景区","世界奇观"]
-				}, {
-					"price": 59,
-					"name": "深圳世界之窗",
-					"url": "http://weibo.com",
-					"imgUrl": "./static/img/demo/1.jpg",
-					"description": "你给我一天，我给你一个世界",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳青青世界",
+					"name":"小梅沙",
 					"url":"http://weibo.com",
 					"imgUrl":"./static/img/demo/2.jpg",
 					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
@@ -78,71 +50,7 @@
 				},
 				{
 					"price": 59,
-					"name": "深圳世界之窗",
-					"url": "http://weibo.com",
-					"imgUrl": "./static/img/demo/1.jpg",
-					"description": "你给我一天，我给你一个世界",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳青青世界",
-					"url":"http://weibo.com",
-					"imgUrl":"./static/img/demo/2.jpg",
-					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳锦绣中华民俗村",
-					"url":"http://weibo.com",
-					"imgUrl":"./static/img/demo/3.jpg",
-					"description":"一步迈进历史，一天走遍中华",
-					"label":["缩微景区","世界奇观"]
-				}, {
-					"price": 59,
-					"name": "深圳世界之窗",
-					"url": "http://weibo.com",
-					"imgUrl": "./static/img/demo/1.jpg",
-					"description": "你给我一天，我给你一个世界",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳青青世界",
-					"url":"http://weibo.com",
-					"imgUrl":"./static/img/demo/2.jpg",
-					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
-					"label":["缩微景区","世界奇观"]
-				},
-				{
-					"price": 59,
-					"name": "深圳世界之窗",
-					"url": "http://weibo.com",
-					"imgUrl": "./static/img/demo/1.jpg",
-					"description": "你给我一天，我给你一个世界",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳青青世界",
-					"url":"http://weibo.com",
-					"imgUrl":"./static/img/demo/2.jpg",
-					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳锦绣中华民俗村",
-					"url":"http://weibo.com",
-					"imgUrl":"./static/img/demo/3.jpg",
-					"description":"一步迈进历史，一天走遍中华",
-					"label":["缩微景区","世界奇观"]
-				}, {
-					"price": 59,
-					"name": "深圳世界之窗",
-					"url": "http://weibo.com",
-					"imgUrl": "./static/img/demo/1.jpg",
-					"description": "你给我一天，我给你一个世界",
-					"label":["缩微景区","世界奇观"]
-				},{
-					"price": 59,
-					"name":"深圳青青世界",
+					"name":"欢乐谷last",
 					"url":"http://weibo.com",
 					"imgUrl":"./static/img/demo/2.jpg",
 					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
@@ -153,7 +61,7 @@
 			[
 				{
 					"price": 59,
-					"name":"深圳小梅沙海洋世界(深圳海洋世界)",
+					"name":"深圳小梅沙海洋世界111",
 					"url":"http://weibo.com",
 					"imgUrl":"./static/img/demo/4.jpg",
 					"description":"漫步五彩缤纷的海底世界，畅享欢乐时光",
@@ -172,13 +80,116 @@
 					"imgUrl":"./static/img/demo/6.jpg",
 					"description":"一座浪漫唯美的主题乐园",
 					"label":["缩微景区","世界奇观"]
+				},	{
+					"price": 59,
+					"name": "深圳世界之窗",
+					"url": "http://weibo.com",
+					"imgUrl": "./static/img/demo/1.jpg",
+					"description": "你给我一天，我给你一个世界",
+					"label":["缩微景区","世界奇观"]
+				},{
+					"price": 59,
+					"name":"深圳青青世界",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/2.jpg",
+					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
+					"label":["缩微景区","世界奇观"]
+				},{
+					"price": 59,
+					"name":"深圳锦绣中华民俗村",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/3.jpg",
+					"description":"一步迈进历史，一天走遍中华",
+					"label":["缩微景区","世界奇观"]
+				}, {
+					"price": 59,
+					"name": "深圳世界之窗",
+					"url": "http://weibo.com",
+					"imgUrl": "./static/img/demo/1.jpg",
+					"description": "你给我一天，我给你一个世界",
+					"label":["缩微景区","世界奇观"]
+				},{
+					"price": 59,
+					"name":"深圳青青世界",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/2.jpg",
+					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
+					"label":["缩微景区","世界奇观"]
+				},
+				{
+					"price": 59,
+					"name":"深圳青青世界00000",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/2.jpg",
+					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
+					"label":["缩微景区","世界奇观"]
+				},
+				{
+					"price": 59,
+					"name":"深圳青青世界000",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/2.jpg",
+					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
+					"label":["缩微景区","世界奇观"]
+				},
+				{
+					"price": 59,
+					"name": "深圳世界之窗",
+					"url": "http://weibo.com",
+					"imgUrl": "./static/img/demo/1.jpg",
+					"description": "你给我一天，我给你一个世界",
+					"label":["缩微景区","世界奇观"]
+				},{
+					"price": 59,
+					"name":"深圳青青世界",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/2.jpg",
+					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
+					"label":["缩微景区","世界奇观"]
+				},{
+					"price": 59,
+					"name":"深圳锦绣中华民俗村",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/3.jpg",
+					"description":"一步迈进历史，一天走遍中华",
+					"label":["缩微景区","世界奇观"]
+				}, {
+					"price": 59,
+					"name": "深圳世界之窗",
+					"url": "http://weibo.com",
+					"imgUrl": "./static/img/demo/1.jpg",
+					"description": "你给我一天，我给你一个世界",
+					"label":["缩微景区","世界奇观"]
+				},{
+					"price": 59,
+					"name":"深圳青青世界",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/2.jpg",
+					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
+					"label":["缩微景区","世界奇观"]
+				},
+				{
+					"price": 59,
+					"name":"深圳青青世界00000",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/2.jpg",
+					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
+					"label":["缩微景区","世界奇观"]
+				},
+				{
+					"price": 59,
+					"name":"深圳青青世界last",
+					"url":"http://weibo.com",
+					"imgUrl":"./static/img/demo/2.jpg",
+					"description":"远离都市喧嚣，享受鸟语花香的田园风光",
+					"label":["缩微景区","世界奇观"]
 				}
 			],
 			"playAroundData":
 			[
 				{
 					"price": 59,
-					"name":"深圳世界之窗",
+					"name":"深圳世界之窗222",
 					"url":"http://weibo.com",
 					"imgUrl":"./static/img/demo/1.jpg",
 					"description":"你给我一天，我给你一个世界",

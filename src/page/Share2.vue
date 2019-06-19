@@ -1,11 +1,7 @@
 <template>
-<section class="tablist">
-  <ul class="tab-title" ref='tab_title_hook'>
-    <li class="box1-item" v-for="(item,index) in tab_title" :class="{'active':isCur===index}" @click="highlight(index)">{{item.name}}</li>
-  </ul>
-    <div class="tab-content" ref="wrapper">
-        <div class="bscroll-container">
-            <div v-for="(m,index) in tabListData"  class="row" :class="{'grey-bg': index % 2 == 0}" :key="m.id">
+        <div class="bscroll-container" ref="wrapper">
+        <div class="tab-content">
+            <div v-for="(m,index) in persons"  class="row" :key="m.id">
                 <div  class="scenic-link" v-for='v in m' :key="v.id">
                     <div class="pro-img"><img :src="v.imgUrl" alt=""></div>
                     <div class="pro-detail">
@@ -23,85 +19,74 @@
             </div>
         </div>
     </div>
-</section>
 </template>
 
 <script>
-import Bscroll from 'better-scroll' 
+import BScroll from 'better-scroll'
 export default {
-  name: "TabList",
-  data() {
-    return {
-      tab_title: [
-        {'name':'当季热门','key':'hotSceneData'},
-        {'name':'景点+酒店','key':'resortHotelsData'},
-        {'name':'周边游玩','key':'playAroundData'}
-      ],
-      tabContents: ["内容一", "内容二","内容三"],
-      prevkey:'',   
-      isCur: 0,
-      tabkey:'',  
-      tabListData: [],
-      allData:[],
-      // resortHotelsData:[],
-      // playAroundData:[]
-
-    }
-  },
-  methods:{
-    request(key) {
-        let that = this;
-      var url = './static/json/goods-list.json';
-      this.$ajax.get(url).then(res => {
-        that.tabListData = res.data
-        this.$nextTick(() => {
-            this.scroll = new Bscroll(this.$refs.wrapper);
-        })
-          console.log(that.tabListData,"00112233")
-      })
-      .catch(error => {
-          console.log(error);
-      });
+    data(){
+        return{
+            dropDown:false,
+            persons: [],
+            list_param: {page: 1},
+            no_data: false,
+            has_log: 0
+        }
     },
-
-    // getdata(){
-    //   var url = './static/json/goods-list.json';
-    //   var that= this;
-    //   this.$ajax.get(url).then(res => {
-    //       console.log(res,"33333")
-    //       that.tabListData = res.data;
-    //   })
-    //   .catch(error => {
-    //       console.log(error);
-    //   });
-    // },
-    highlight(index){
-        //阻止pc 端，点击事件执行多次，（不是自己派发的事件，return）
-        //点击事件是靠 better-scroll 派发的
-        // if(!event._constructed) return;
-        this.isCur = index;
-        this.tabkey = this.tab_title[index]['key'];
-        console.log(this.tabkey,'我执行的次数');
-        this.request(this.tabkey);
+    methods:{
+        request() {
+            // for (var i = 0; i < 5; i++) {
+                let that = this;
+                var url = './static/json/goods-list.json';
+                this.$ajax.get(url,this.list_param).then(response => {
+                        that.persons.push(response.data.hotSceneData)
+                        this.list_param.page += 1
+                        console.log(response.data.hotSceneData,"000")
+                        console.log(this.list_param.page,"111")
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+            // }
+        },
+        scroll(person) {
+            let isLoading = false;
+            window.onscroll = () => {
+                var url = './static/json/goods-list.json';
+                // 距离底部200px时加载一次
+                let bottomOfWindow = document.documentElement.offsetHeight - document.documentElement.scrollTop - window.innerHeight <= 200
+                if (bottomOfWindow && isLoading == false) {
+                isLoading = true
+                this.$ajax.get(url,this.list_param).then(response => {
+                    console.log(response.data.hotSceneData.length,"0147")
+                    if (response.data.hotSceneData.length > 0) {
+                        person.push(response.data.hotSceneData)
+                        this.list_param.page = this.list_param.page + 1
+                        this.has_log = 0
+                        console.log(response.data.hotSceneData,"222")
+                        isLoading = false
+                    }else{
+                        this.has_log = 2
+                        this.no_data = true
+                    }
+                })
+                }
+            }
+        }
     },
-  },
-  created(){
-    let key0 = this.tab_title[0]['key'];
-    console.log(key0,"258")
-    this.request(key0);
-  },
-  mounted() {
-
-    // this.getdata();
-  },
+    beforeMount() {
+        // 在页面挂载前就发起请求
+        this.request()
+    },
+    mounted() {
+        this.scroll(this.persons)
+    },
 
 }
 </script>
-
-<style scoped>
+<style>
 .tab-content{
-    height: 1000px;
-    overflow: hidden;
+    padding-bottom: 100px;
 }
 .tablist{
         background: #fff;
@@ -254,3 +239,4 @@ export default {
         margin-top: 30px;
     }
 </style>
+

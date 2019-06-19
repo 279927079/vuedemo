@@ -17,6 +17,8 @@ import  { ToastPlugin, LoadingPlugin } from 'vux'
 Vue.use(ToastPlugin)
 Vue.use(LoadingPlugin)
 import store from './store'//引入store
+import VueAMap from 'vue-amap';
+Vue.use(VueAMap);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
