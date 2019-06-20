@@ -87,8 +87,9 @@ export default {
   background: #fff;
 }
 .list .item-list .item{
-  line-height: 60px;
+  line-height: 80px;
   padding-left: 20px;
+  font-size: 28px;
 }
 .border-bottom:before {
   content: " ";
@@ -100,7 +101,7 @@ export default {
   transform-origin: 0 100%;
   left: 0;
   width: 100%;
-  height: 1px;
+  height:2px;
 }
 .list .button-list{
   background: #fff;
