@@ -1,3 +1,3 @@
 export default {
-  api: '/static/moc/'
+  api: './static/moc/'
 }

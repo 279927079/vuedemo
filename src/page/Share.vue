@@ -184,9 +184,9 @@ export default {
     background: #efefef;
     width: 100%;
     height: 60px;
-    line-height: 60px;
+    line-height: 40px;
     border-radius: 50px;
-    padding: 0 20px;
+    padding: 10px 20px;
     box-sizing: border-box
 }
 .navbar .box-search a {
