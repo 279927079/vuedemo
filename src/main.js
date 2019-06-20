@@ -13,9 +13,9 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper)
 import axios from 'axios' //引入axios
 Vue.prototype.$ajax=axios//修改Vue的原型属性
-import  { ToastPlugin, LoadingPlugin } from 'vux'
-Vue.use(ToastPlugin)
-Vue.use(LoadingPlugin)
+// import  { ToastPlugin, LoadingPlugin } from 'vux'
+// Vue.use(ToastPlugin)
+// Vue.use(LoadingPlugin)
 import store from './store'//引入store
 import VueAMap from 'vue-amap';
 Vue.use(VueAMap);

@@ -2,9 +2,9 @@
 <div>
     <div class="navbar">
         <div class="nav-wrap-left">
-            <a  class="react">
+            <router-link to="/city" class="react">
                 <span class="nav-city icon-gray-color">{{LocationCity}}<i></i></span>
-            </a>
+            </router-link>
         </div>
         <div class="box-search">
             <input type="text" v-model="searchString" placeholder="输入景区名称">
@@ -48,7 +48,7 @@ export default {
         }
     },
     mounted(){
-        this.city();
+        this.Location();
     },
     computed: {
         // 计算数学，匹配搜索
@@ -81,7 +81,7 @@ export default {
         window.addEventListener('scroll', this.onScroll)
     },
     methods:{
-        city(){    //定义获取城市方法
+        Location(){    //定义获取城市方法
             const geolocation = new BMap.Geolocation();
             var _this = this
             geolocation.getCurrentPosition(function getinfo(position){
@@ -127,7 +127,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 .navbar {
     height: 100px;
     color: #333;

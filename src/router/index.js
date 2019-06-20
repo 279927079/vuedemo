@@ -1,11 +1,12 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "@/page/Home.vue";
-import Share from "@/page/Share.vue";
-import Login from "@/page/Login.vue";
-import Forget from "@/page/Forget.vue";
-import Register from "@/page/Register.vue";
-import Sceneries from "@/page/Sceneries.vue";
+// import Home from "@/page/Home.vue";
+// import Share from "@/page/Share.vue";
+// import City from "@/page/city/City.vue";
+// import Login from "@/page/Login.vue";
+// import Forget from "@/page/Forget.vue";
+// import Register from "@/page/Register.vue";
+// import Sceneries from "@/page/Sceneries.vue";
 import store from '../store/index'
 Vue.use(Router);
 
@@ -13,9 +14,26 @@ const router = new Router({
   mode: "hash",
   routes: [
     {
+      path: "/",
+      // name: "Home",
+      component:(resolve)=>require(['@/page/Home.vue'],resolve),
+      meta: {
+        title:"首页",
+        keepAlive: true
+      }
+    },
+    {
+      path: "/Share",
+      component:(resolve)=>require(['@/page/Share.vue'],resolve),
+      meta: {
+        title:"门票",
+        keepAlive: true
+      }
+    },
+    {
       path: "/Login",
       name: "Login",
-      component: Login,
+      component:(resolve)=>require(['@/page/Login.vue'],resolve),
       meta: {
         keepAlive: false
       }
@@ -26,7 +44,7 @@ const router = new Router({
     {
       path: "/Forget",
       name: "Forget",
-      component: Forget,
+      component:(resolve)=>require(['@/page/Forget.vue'],resolve),
       meta: {
         keepAlive: false
       }
@@ -37,31 +55,23 @@ const router = new Router({
     {
       path: "/Register",
       name: "Register",
-      component: Register,
+      component:(resolve)=>require(['@/page/Register.vue'],resolve),
       meta: {
         keepAlive: false
       }
     },
     {
-      path: "/",
-      name: "Home",
-      component: Home,
+      path: "/City",
+      name: "City",
+      component:(resolve)=>require(['@/page/city/City.vue'],resolve),
       meta: {
-        keepAlive: true
-      }
-    },
-    {
-      path: "/Share",
-      name: "Share",
-      component: Share,
-      meta: {
-        keepAlive: true
+        keepAlive: false
       }
     },
     {
       path: "/Sceneries",
       name: "Sceneries",
-      component: Sceneries,
+      component:(resolve)=>require(['@/page/Sceneries.vue'],resolve),
       meta: {
         requireAuth: true // 添加该字段，表示进入这个路由是需要登录的
       }
@@ -78,7 +88,7 @@ router.beforeEach((to, from, next) => {
     } else {
       console.log('该页面需要登陆')
       next({
-        path: '/login'
+        path: '/login',
         // query: {redirect: to.fullPath} // 将跳转的路由path作为参数，登录成功后跳转到该路由
       })
     }
